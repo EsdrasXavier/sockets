@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
   printf("Connected.\n");
 
   // Envia dados
-  message = "GET / HHTP/1.1\r\n\r\n";
+  message = "GET / HTTP/1.1\r\n\r\n";
   if (send(socketDesc, message, strlen(message), 0) < 0) {
     printf("Falha ao enviar.\n");
     return 1;
